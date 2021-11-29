@@ -5,7 +5,7 @@
 
 header {
   display: flex;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
   justify-content: center;
   position: sticky;
   top: 0;
@@ -40,22 +40,38 @@ body {
 }
 
 h1 {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 3vw;
+  font-size: 10vw;
   color: #ffffff;
   line-height: 1.125;
   margin-bottom: 2vw;
+  font-family: pentz-classic, serif;
+  font-weight: 600;
+  font-style: normal;
+  color: rgb(255, 255, 254);
+  text-shadow: rgb(17, 16, 16) 20px 20px 20px;
+  text-align: center;
 }
 
 h2 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: pentz-classic, serif;
   font-size: 1.5vw;
   color: #ffffff;
   line-height: 1.125;
   margin-bottom: 2vw;
+  margin: 4rem;
 }
 
-img {
+h3 {
+  font-family: pentz-classic, serif;
+  font-size: 1.5vw;
+  color: #ffffff;
+  line-height: 1.125;
+  margin-bottom: 2vw;
+  margin: 2rem;
+}
+
+img,
+video {
   width: 100%;
   height: auto;
   vertical-align: middle;
@@ -85,6 +101,22 @@ img {
   max-width: 1200px;
 }
 
+#first_section {
+  grid-column: 1/4;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(baggrund.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#first_section .section_wrapper {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
 #second_section {
   font-family: pentz-classic, serif;
   font-weight: 500;
@@ -103,10 +135,9 @@ img {
 }
 
 #fourth_section {
-  margin: 0rem;
 }
 
-.iframe {
+iframe {
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
